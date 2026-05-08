@@ -1,6 +1,6 @@
 # Project Report: Digital Identity Management System
 
-**Diagrams Link:** [View Google Docs Report](https://docs.google.com/document/d/1l7E7x6WijJtWIZj29DmOGWuaom4fQ-LL9poMjP9gGuc/edit?usp=sharing)
+**Docs Link:** [View Google Docs Report](https://docs.google.com/document/d/1l7E7x6WijJtWIZj29DmOGWuaom4fQ-LL9poMjP9gGuc/edit?usp=sharing)
 
 ## 1. Project Overview
 The **Digital Identity System** is a secure, backend application built using Python and Flask. Its primary goal is to securely manage user identities, verify who they are (Authentication), and control what they are allowed to do (Authorization). 
