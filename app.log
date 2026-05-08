@@ -1,0 +1,20 @@
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask_limiter/_extension.py:364: UserWarning: Using the in-memory storage for tracking rate limits as no storage was explicitly specified. This is not recommended for production use. See: https://flask-limiter.readthedocs.io#configuring-a-storage-backend for documentation about configuring the storage backend.
+  warnings.warn(
+Database initialized successfully.
+ * Serving Flask app 'app'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.29.64:5001
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flask_limiter/_extension.py:364: UserWarning: Using the in-memory storage for tracking rate limits as no storage was explicitly specified. This is not recommended for production use. See: https://flask-limiter.readthedocs.io#configuring-a-storage-backend for documentation about configuring the storage backend.
+  warnings.warn(
+ * Debugger is active!
+ * Debugger PIN: 503-384-817
+127.0.0.1 - - [08/May/2026 23:44:35] "[35m[1mPOST /api/auth/register HTTP/1.1[0m" 201 -
+127.0.0.1 - - [08/May/2026 23:44:36] "POST /api/auth/login HTTP/1.1" 200 -
+127.0.0.1 - - [08/May/2026 23:44:36] "[31m[1mGET /api/user/profile HTTP/1.1[0m" 422 -
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/multiprocessing/resource_tracker.py:254: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
