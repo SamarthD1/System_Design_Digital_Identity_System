@@ -29,18 +29,13 @@ Think of this system as the digital "bouncer" for an application. Before anyone 
 
 ## 4. System Architecture & Design
 
-Here is a visual and technical overview of the system's architecture, data modeling, and API capabilities.
-
 ### Architecture Design
-*A high-level view of how the Digital Identity System is structured.*
 ![System Architecture Diagram](./1.SystemArchitectureDiagram.png)
 
 ### Authentication Flow Design
-*The step-by-step process of secure user login, including rate-limiting and MFA checks.*
 ![Authentication Flow Diagram](./2.Authentication_Flow.png)
 
 ### Data Model Design
-*The Entity-Relationship diagram showing how identities, roles, and sessions are stored in the database.*
 ![Data Model Design Diagram](./3.Data_Model_Design.png)
 
 ### API Design
@@ -81,7 +76,7 @@ Here is a simple breakdown of how the code is organized:
 
 ---
 
-## 6. Answers to Mandatory Project Questions
+## 6. Answers to Project Questions
 
 ### How are passwords stored securely?
 We **never** store passwords in plain text. If a hacker breaches the database, they will not see "password123". Instead, we use **Bcrypt**. Before saving the password, Bcrypt adds random characters (called a "salt") to it and scrambles it mathematically into a long, unreadable string (a "hash"). When a user logs in, we scramble the password they type in and see if it matches the hash we saved.
@@ -97,7 +92,7 @@ When a user sets up MFA, our system generates a unique "Secret Key" and shows it
 
 ---
 
-## 7. Answers to Mandatory Project Questions
+## 7. Answers to Project Questions
 
 ### Q1. How will the system securely store user credentials?
 **Answer:** The system uses the **Bcrypt** algorithm. Passwords are never stored in plain text. Bcrypt automatically applies a random "salt" to the password before hashing it, which prevents "rainbow table" attacks. It also uses a high computational "cost" factor to make brute-forcing the hash practically impossible.
