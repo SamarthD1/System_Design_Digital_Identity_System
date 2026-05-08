@@ -79,7 +79,7 @@ Here is a simple breakdown of how the code is organized:
 
 ---
 
-## 6. Answers to Mandatory Project Questions
+## 6. Answers to Project Questions
 
 ### How are passwords stored securely?
 We **never** store passwords in plain text. If a hacker breaches the database, they will not see "password123". Instead, we use **Bcrypt**. Before saving the password, Bcrypt adds random characters (called a "salt") to it and scrambles it mathematically into a long, unreadable string (a "hash"). When a user logs in, we scramble the password they type in and see if it matches the hash we saved.
@@ -95,7 +95,7 @@ When a user sets up MFA, our system generates a unique "Secret Key" and shows it
 
 ---
 
-## 7. Answers to Mandatory Project Questions
+## 7. Answers to Project Questions
 
 ### Q1. How will the system securely store user credentials?
 **Answer:** The system uses the **Bcrypt** algorithm. Passwords are never stored in plain text. Bcrypt automatically applies a random "salt" to the password before hashing it, which prevents "rainbow table" attacks. It also uses a high computational "cost" factor to make brute-forcing the hash practically impossible.
